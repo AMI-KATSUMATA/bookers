@@ -1,0 +1,23 @@
+<!--createのフラッシュメッセージ-->
+<p class=flash>
+<%= flash[:notice] %>
+</p>
+
+
+  <p>
+    <strong>Title:</strong><%= @book.title %>
+  </p>
+
+  <p>
+    <strong>Body:</strong><%= @book.body %>
+  </p>
+
+  <!--編集・一覧ページへのリンク-->
+  <div class="link">
+  <%= link_to "Edit", edit_book_path(@book) %>
+  |
+  <%= link_to "Back", books_path %>
+  </div>
+
+
+
